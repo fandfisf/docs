@@ -2,4 +2,6 @@
 ### svn 
 In most cases, local directory and URLs are interchanagable. This docuemnts the most common scenarios I have encountered.
 * __Branch__ : From one level above the directory to branch `svn copy --revision ##### ./directory-to-branch URL-to-branch-directory-under` e.g. `apps$ svn copy --revision 1234 ./awesome-app https://repo/branches/apps/feature-1/awesome-app`
-* __Merge branch to trunk (reintegrate)__ : From the trunk directory `svn merge --reintegrate URL-to-branch` e.g. using the branch aexample above `apps/awesome-app$ svn merge --reintegrate https://repo/branches/apps/feature-1/awesome-app`
+* __Merge branch to trunk (reintegrate)__ : From the trunk directory `svn merge --reintegrate URL-to-branch` e.g. using the branch example above `apps/awesome-app$ svn merge --reintegrate https://repo/branches/apps/feature-1/awesome-app`
+### Oracle
+* __to_date__ : `TO_DATE(date-string, picture-string)` e.g `TO_DATE('2016-12-29 13:30:59','YYYY-MM-DD HH24:MI:SS')`
