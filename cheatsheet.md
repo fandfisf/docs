@@ -6,3 +6,15 @@ In most cases, local directory and URLs are interchanagable. This docuemnts the 
 ### Oracle
 * __to_date__ : `TO_DATE(date-string, picture-string)` e.g `TO_DATE('2016-12-29 13:30:59','YYYY-MM-DD HH24:MI:SS')`
 * __Timestamp with timezone__ : `TO_TIMESTAMP_TZ('2018-12-14TIME13:45:29-8:00', 'YYYY-MM-DD"TIME"HH24:MI:SSTZH:TZM')`Convert December 14th, 2018 13:45:29 PACIFIC to time stamp. Note the word __`TIME`__ in double quotes
+### Kotlin
+* Always use `.?` for `null` check.
+``` kotlin
+      val one :Long = 1;
+        one.takeIf { one == 2L }?.run{
+            fail()
+        }
+        var  took:Boolean  = false;
+        one.takeIf { one == 1L }?.let{
+          it
+        }?: fail()
+```
