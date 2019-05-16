@@ -18,3 +18,4 @@ In most cases, local directory and URLs are interchanagable. This docuemnts the 
           it
         }?: fail()
 ```
+* `inline` functions allow return out of the outer block.
