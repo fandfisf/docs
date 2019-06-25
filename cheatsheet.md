@@ -13,6 +13,7 @@ In most cases, local directory and URLs are interchanagable. This docuemnts the 
     svn merge -r HEAD:Rd
     ```
   * This will result in a new revision where the soruce tree is identical to Rd, Let us  call this revision __Rd1__.
+  * Now apply the hotfix to the code, since it's identical to the deployed codebase, there is a very low risk of regression issues.
  
 ### Oracle
 * __to_date__ : `TO_DATE(date-string, picture-string)` e.g `TO_DATE('2016-12-29 13:30:59','YYYY-MM-DD HH24:MI:SS')`
