@@ -26,7 +26,7 @@ In most cases, local directory and URLs are interchanagable. This docuemnts the 
         one.takeIf { one == 2L }?.run{
             fail()
         }
-        var  took:Boolean  = false;
+
         one.takeIf { one == 1L }?.let{
           it
         }?: fail()
