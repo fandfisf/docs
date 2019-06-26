@@ -1,5 +1,5 @@
 # Quick create scripts
-```SQL
+```CQL
 use test_table_space;
 select * from test_table;
 
